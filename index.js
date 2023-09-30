@@ -14,10 +14,6 @@ let rightArray = [
 let leftRandomNumber = Math.floor(Math.random() * 4);
 let rightRandomNumber = Math.floor(Math.random() * 4);
 
-console.log(
-  getQuote(leftArray[leftRandomNumber], rightArray[rightRandomNumber])
-);
-
-function getQuote(msg1, msg2) {
-  return msg1 + " " + msg2;
-}
+document.getElementById(
+  "quote"
+).innerHTML = `${leftArray[leftRandomNumber]} ${rightArray[rightRandomNumber]}`;

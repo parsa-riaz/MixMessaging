@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote-box {
+  height: 70%;
+  width: 40%;
+  z-index: 2;
+
+  position: absolute;
+  text-align: center;
+  background-color: rgba(125, 200, 230, 0.4);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  font-size: 1.5rem;
+  font-family: "Permanent Marker", Times, serif;
+  color: rgb(22, 4, 124);
+  line-height: 2vh;
+}
+
+.quote {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.quote-note {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/notes.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quaote-text {
+  font-size: 1.5rem;
+  font-family: Caveat, Times, serif;
+  font-weight: bolder;
+  height: 50%;
+  width: 70%;
+}
+@media screen and (max-width: 500px) {
+  #video {
+    width: auto;
+    height: 100%;
+  }
+
+  .quote-box {
+    height: 90%;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #video {
+    width: auto;
+    height: 100%;
+  }
+  .quote-note {
+    background-image: url("./images/notes.png");
+    background-size: 100% 100%;
+  }
+  .quote-box {
+    height: 50%;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .quote-box {
+    height: 70%;
+    width: 65%;
+  }
+
+  .quaote-text {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .message {
+    line-height: 3vh;
+  }
+  .quaote-text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .quaote-text {
+    font-size: 2.5rem;
+  }
+}
