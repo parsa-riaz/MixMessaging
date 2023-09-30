@@ -17,3 +17,5 @@ let rightRandomNumber = Math.floor(Math.random() * 4);
 document.getElementById(
   "quote"
 ).innerHTML = `${leftArray[leftRandomNumber]} ${rightArray[rightRandomNumber]}`;
+
+document.getElementById("video").play();
