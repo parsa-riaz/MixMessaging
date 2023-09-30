@@ -65,51 +65,103 @@ body {
   height: 50%;
   width: 70%;
 }
-@media screen and (max-width: 500px) {
-  #video {
-    width: auto;
-    height: 100%;
-  }
 
+@media screen and (max-width: 400px) {
+  .message {
+    font-size: 1rem;
+    line-height: 2.5vh;
+  }
+  #video {
+    height: 100%;
+    width: auto;
+  }
+  .quaote-text {
+    font-size: 1.3rem;
+  }
   .quote-box {
-    height: 90%;
+    height: 60%;
     width: 90%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 400px) {
+  .message {
+    font-size: 1.5rem;
+
+    line-height: 3vh;
+  }
   #video {
-    width: auto;
     height: 100%;
+    width: auto;
   }
-  .quote-note {
-    background-image: url("./images/notes.png");
-    background-size: 100% 100%;
+  .quaote-text {
+    font-size: 1.5rem;
   }
-  .quote-box {
-    height: 50%;
-    width: 60%;
-  }
-}
-@media screen and (max-width: 1300px) {
   .quote-box {
     height: 70%;
-    width: 65%;
+    width: 80%;
   }
+}
+@media screen and (min-width: 700px) {
+  .message {
+    font-size: 1.5rem;
 
+    line-height: 2.5vh;
+  }
+  #video {
+    height: 100%;
+    width: auto;
+  }
   .quaote-text {
     font-size: 2rem;
+  }
+  .quote-box {
+    height: 60%;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .message {
+    font-size: 1.5rem;
+
+    line-height: 2vh;
+  }
+  #video {
+    height: 100%;
+    width: 100%;
+  }
+  .quaote-text {
+    font-size: 2.5rem;
+  }
+  .quote-box {
+    height: 80%;
+    width: 55%;
   }
 }
 @media screen and (min-width: 1300px) {
   .message {
-    line-height: 3vh;
-  }
-  .quaote-text {
     font-size: 2rem;
+
+    line-height: 2vh;
+  }
+
+  .quaote-text {
+    font-size: 2.5rem;
+  }
+  .quote-box {
+    height: 70%;
+    width: 60%;
   }
 }
+@media screen and (min-width: 1500px) {
+  .message {
+    font-size: 2rem;
 
-@media screen and (min-width: 1400px) {
+    line-height: 3vh;
+  }
+  .quote-box {
+    height: 70%;
+    width: 50%;
+  }
   .quaote-text {
     font-size: 2.5rem;
   }
