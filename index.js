@@ -24,6 +24,7 @@ document.querySelector("#start").onclick = () => {
   if (start === false) {
     audio.play();
     audio.loop = true;
+
     speaker.src = "./images/sound.png";
     start = true;
   } else if (start === true) {
