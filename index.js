@@ -14,26 +14,28 @@ let rightArray = [
 let leftRandomNumber = Math.floor(Math.random() * 4);
 let rightRandomNumber = Math.floor(Math.random() * 4);
 
-let start = false;
+var isPlaying =
+  video.currentTime > 0 &&
+  !video.paused &&
+  !video.ended &&
+  video.readyState > video.HAVE_CURRENT_DATA;
+
 let audio = new Audio(
   "./images/sandy-beach-calm-waves-water-nature-sounds-8052.mp3"
 );
 let speaker = document.getElementById("speaker");
 
 document.querySelector("#start").onclick = () => {
-  if (start === false) {
+  if (audio.paused === true) {
     audio.play();
     speaker.src = "./images/sound.png";
-    start = true;
-  } else if (start === true) {
+  } else {
     audio.pause();
     speaker.src = "./images/nosound.png";
-    start = false;
+    audio.currentTime = 0;
   }
 };
 
 document.getElementById(
   "quote"
 ).innerHTML = `${leftArray[leftRandomNumber]} ${rightArray[rightRandomNumber]}`;
-
-document.getElementById("video").play();
