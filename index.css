@@ -166,7 +166,7 @@ body {
 @media screen and (min-width: 1200px) {
   .message {
     font-size: 1.5rem;
-    line-height: 3vh;
+    line-height: 4vh;
   }
   #video {
     height: 100%;
@@ -177,7 +177,7 @@ body {
   }
   .quote-box {
     height: 80%;
-    width: 50%;
+    width: 40%;
   }
   .button {
     height: 20%;
