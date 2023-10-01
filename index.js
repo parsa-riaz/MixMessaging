@@ -14,7 +14,20 @@ let rightArray = [
 let leftRandomNumber = Math.floor(Math.random() * 4);
 let rightRandomNumber = Math.floor(Math.random() * 4);
 
-document.getElementById("video").play();
+let vedio = document.getElementById("video");
+let playPromise = vedio.play();
+if (playPromise !== undefined) {
+  playPromise
+    .then((_) => {
+      vedio.play();
+    })
+    .catch((error) => {
+      vedio.pause();
+      vedio.currentTime = 0;
+      vedio.play();
+    });
+}
+
 let audio = new Audio(
   "./images/sandy-beach-calm-waves-water-nature-sounds-8052.mp3"
 );
