@@ -14,6 +14,25 @@ let rightArray = [
 let leftRandomNumber = Math.floor(Math.random() * 4);
 let rightRandomNumber = Math.floor(Math.random() * 4);
 
+let start = false;
+let audio = new Audio(
+  "./images/sandy-beach-calm-waves-water-nature-sounds-8052.mp3"
+);
+let speaker = document.getElementById("speaker");
+
+document.querySelector("#start").onclick = () => {
+  if (start === false) {
+    audio.play();
+    audio.loop();
+    speaker.src = "./images/sound.png";
+    start = true;
+  } else if (start === true) {
+    audio.pause();
+    speaker.src = "./images/nosound.png";
+    start = false;
+  }
+};
+
 document.getElementById(
   "quote"
 ).innerHTML = `${leftArray[leftRandomNumber]} ${rightArray[rightRandomNumber]}`;
